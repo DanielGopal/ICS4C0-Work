@@ -11,8 +11,8 @@ ________________________________________________________________________________
 public class MixedVariableOutput {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Create variables that correspond with parts of the output
+	// TODO Auto-generated method stub
+        //Create variables that correspond with parts of the output
         short three = 3;
         int one = 1;
         byte zero = 0;
@@ -218,7 +218,7 @@ ________________________________________________________________________________
 public class StringLength {
 
 	public static void main(String[] args) {
-		 // TODO Auto-generated method stub
+          // TODO Auto-generated method stub
 	  //Create a String
 		String List = "Pear";
 		    	    		       		    	        
@@ -242,14 +242,14 @@ ________________________________________________________________________________
 public class CharArrayLength {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Create an array of characters
+	// TODO Auto-generated method stub
+	//Create an array of characters
         char[] List = new char[]{'B','l','u','e'};
                 
         //Print the array
         for (int i = 0; i < List.length; i++)
         {
-        	System.out.print(List[i]);
+            System.out.print(List[i]);
         }
         
         int ArrayLength  = List.length; //The length of the array
@@ -262,5 +262,5 @@ public class CharArrayLength {
         
         System.out.println("The last element in the array is " + LastCharacter);
                         
-	   }
+        }
    }			
