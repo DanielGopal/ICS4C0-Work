@@ -1,0 +1,135 @@
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.ModifyEvent;
+import org.eclipse.swt.events.ModifyListener;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Spinner;
+
+public class SpinnerSWT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Display display = new Display();
+		Shell shell = new Shell(display);
+		shell.setText("Spinner SWT");
+		
+	    Spinner spinner = new Spinner(shell, SWT.BORDER);
+	    spinner.setToolTipText("Spinner");
+	    //spinner.setLocation(50, 50);
+	    spinner.setMinimum(0);
+	    spinner.setMaximum(10);
+	    spinner.setSelection(1);
+	    spinner.setIncrement(1);
+	    spinner.setPageIncrement(5);
+	    
+	    
+		spinner.addModifyListener(new ModifyListener() {
+			@Override
+			public void modifyText(ModifyEvent e) {
+				Integer value = spinner.getSelection();
+				spinner.setToolTipText("Value is: " + value.toString());
+			}
+		});
+		
+	    spinner.pack();
+
+	    //shell.pack();
+		shell.open();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) display.sleep();
+		}
+		display.dispose();
+	}
+
+}
+
+___________________________________________________________________________________________________________________________________--
+
+public String squareRoot(double number) {
+		double t;
+		double squareRoot = number / 2;
+		do {
+			t = squareRoot;
+			squareRoot = (t + (number / t)) / 2;
+		} while ((t - squareRoot) != 0);
+
+		return String.valueOf(squareRoot);
+}
+
+________________________________________________________________________________________________________________________________________
+
+Sine:
+package swt_projects.java;
+
+import java.util.Scanner;
+
+public class Trigonometrycalculator {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        double a = 180, b = 40500, c = 4;
+                
+        System.out.println("Enter your number");
+        double x = sc.nextInt();
+        double d = x;
+        
+        a = a-x;
+        c = c*x;
+        c = c*a;
+        d = d*a;
+        
+        b = b-d;
+        c = c/b;
+        
+        if(180 < x) {
+            c = c*-1.0;
+            if(x < 360) {
+            c = c*-1.0;
+            }
+        }
+        
+        System.out.println("x = " + c);
+
+        }
+}
+_________________________________________________________________________________________________________________________________________
+
+exponents: 
+import java.util.Scanner;
+public class exponents {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("please type in your number");
+        int number= sc.nextInt();
+        
+        System.out.println("please type in your exponent");
+        int exponent = sc.nextInt();
+        
+        int B= exponent;
+    
+        int E=2;
+        
+        int A=0;
+        
+        E++;
+        A= number*number;
+        while(B >= E){
+            A= A*number;
+            E++;
+            
+        }
+        
+            
+        
+        System.out.println(A);
+        
+        }
+
+    }
+
+
+
