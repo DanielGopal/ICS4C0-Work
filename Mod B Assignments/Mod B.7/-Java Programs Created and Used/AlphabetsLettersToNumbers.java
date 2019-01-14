@@ -22,15 +22,15 @@ public class AlphabetsLettersToNumbers {
 		
 		//Repeats the same process above but is the opposite as we are decoding now
 		System.out.println("Enter a coded password to decode");
-        System.out.print("Code: ");
-        int codeIn = sc.nextInt();	
+                System.out.print("Code: ");
+                int codeIn = sc.nextInt();	
+         
+                char textOut = 0;
+         
+                char t = NumtoLetter(codeIn, textOut);
         
-        char textOut = 0;
-        
-        char t = NumtoLetter(codeIn, textOut);
-        
-        System.out.println("The Decoded string is: " + t ); //Prints the method's returned character
-				
+                System.out.println("The Decoded string is: " + t ); //Prints the method's returned character
+	  			
 	}
 	
 	public static int LettertoNum(char password, int codeOut) { //Method to convert the letter to its number in the alphabet
@@ -249,8 +249,8 @@ public class AlphabetsLettersToNumbers {
 		return textOut;
 	
 
-	}
-}
+	       }
+         }
 	
 
 
