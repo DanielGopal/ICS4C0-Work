@@ -20,12 +20,12 @@ public class ASCIIApendixCharDec {
 		
 		//Repeats the same process above but is the opposite as we are decoding now
 		System.out.println("Enter a coded password to decode");
-        System.out.print("Code: ");
-        int codeIn = sc.nextInt();	
+                System.out.print("Code: ");
+                int codeIn = sc.nextInt();	
         
-        char textOut = 0;
+                char textOut = 0;
         
-        char t = DectoChar(codeIn, textOut);
+                char t = DectoChar(codeIn, textOut);
         
         System.out.println("The Decoded string is: " + t ); //Prints the method's returned character
 				
@@ -152,8 +152,8 @@ public class ASCIIApendixCharDec {
 		return textOut;
 	
 
-	}
-}
+	      }
+        }
 	
 
 
