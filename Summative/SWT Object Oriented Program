@@ -1,0 +1,73 @@
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Spinner;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.List;
+import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Spinner;
+import org.eclipse.swt.widgets.Text;
+
+public class JavaSWTSummative {
+
+	public static void main(String[] args) {
+		
+		double number;
+		
+		double s = squareRoot(number);//Store method to be returned
+		
+		String f =  Factorial(number);
+		
+		String e = Exponent( number, exp);
+		
+		
+	}
+
+	public static double squareRoot(double number) {
+		double t;
+		 
+		double squareRoot = number / 2;
+	 
+		do {
+			t = squareRoot;
+			squareRoot = (t + (number / t)) / 2;
+		} while ((t - squareRoot) != 0);
+	 
+		return squareRoot;
+	}
+
+	
+	public static String Factorial(double number) {
+		int val = 1;
+		for (int i = 1; i <= number; i++)
+			val *= i;
+		
+		return String.valueOf(val);
+	}
+
+	
+	public static String Exponent(double number, double exp) {
+		double b = exp;
+		
+		int e = 2;
+		
+		double a = 0;
+		
+		e++;
+		
+		a = number * number;
+		
+		while (b >= e) {
+			
+			a = a * number;
+			
+			e++;
+		}
+		
+		return String.valueOf(a); //Convert to string
+	}
+}
